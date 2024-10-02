@@ -32,7 +32,7 @@ const router = createRouter({
       component: () => import('../views/PanamaView.vue'),
     },
     {
-      path: '/destinations/:id',
+      path: '/destinations/show/:id',
       name: 'destinations',
       component: () => import('../views/DesctinationsView.vue'),
     },
