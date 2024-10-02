@@ -14,3 +14,4 @@
 - In this case we use RouterLink tag (it's a tag under the hood) to not refreshing the page (SPA)
 - Dynamic Routes is a route that can have params and query
 - To access params / query from route we call useRoute() hook
+- When setting name to the router this will help us to manipulate the route when calling RouterLink [link](https://router.vuejs.org/guide/essentials/named-routes.html#named-routes)
