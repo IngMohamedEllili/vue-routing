@@ -10,33 +10,12 @@ const router = createRouter({
       name: 'home',
       component: HomeView
     },
-
     {
-      path: '/brasil',
-      name: 'brasil',
-      component: () => import('../views/BrasilView.vue')
-    },
-    {
-      path: '/hawaii',
-      name: 'hawaii',
-      component: () => import('../views/HawaiiView.vue')
-    },
-    {
-      path: '/jamaica',
-      name: 'jamaica',
-      component: () => import('../views/JamaicaView.vue')
-    },
-    {
-      path: '/panama',
-      name: 'panama',
-      component: () => import('../views/PanamaView.vue'),
-    },
-    {
-      path: '/destinations/:id',
-      name: 'destinations',
-      component: () => import('../views/DesctinationsView.vue'),
-    },
-    {
+      path: '/destination/:id/:slug',
+      name: 'destination',
+      component: () => import('../views/DesctinationsView.vue')
+    }
+    , {
       path: '/:catchAll(.*)', name: 'not-found', component: NotFounfView
     },
   ],
