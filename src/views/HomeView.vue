@@ -14,7 +14,13 @@ const state = reactive({
       <RouterLink
         v-for="destination in state.destinations"
         :key="destination.id"
-        :to="{ name: 'destinations', params: { id: destination.id } }"
+        :to="{
+          name: 'destination',
+          params: {
+            id: destination.id,
+            slug: destination.slug
+          }
+        }"
         ><h2>
           {{ destination.name }}
         </h2>

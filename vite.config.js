@@ -17,17 +17,5 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }, build: {
-    rollupOptions: {
-      // https://rollupjs.org/guide/en/#outputmanualchunks
-      output: {
-        manualChunks: {
-          'group-user': [
-            './src/views/PanamaView.vue',
-            './src/views/BrasilView.vue',
-          ],
-        },
-      },
-    },
   },
 })
